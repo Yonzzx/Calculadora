@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="calculadora.css" />
+</head>
+
+<body>
+  <div class="Container">
+
+    <div class="box">
+
+      <div class="tela">
+        <p id="res"></p>
+        <p id="resVal" style="color: gray; font-weight: 600;"></p>
+      </div>
+
+      <table class="btn">
+        <tr>
+          <td><input type="button" value="c" onclick="Limpar('c')" /></td>
+          <td><input type="button" value="<" onclick="Voltar()" /></td>
+          <td><input type="button" value="x" onclick="Inserir('x')" /></td>
+          <td><input type="button" value="÷" onclick="Inserir('/')" /></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="7" onclick="Inserir('7')"></td>
+          <td><input type="button" value="8" onclick="Inserir('8')" /></td>
+          <td><input type="button" value="9" onclick="Inserir('9')" /></td>
+          <td><input type="button" value="-" onclick="Inserir('-')" /></td>
+        </tr>
+
+
+        <tr>
+          <td><input type="button" value="4" onclick="Inserir('4')"></td>
+          <td><input type="button" value="5" onclick="Inserir('5')" /></td>
+          <td><input type="button" value="6" onclick="Inserir('6')" /></td>
+          <td><input type="button" value="+" onclick="Inserir('+')" /></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="1" onclick="Inserir('1')"></td>
+          <td><input type="button" value="2" onclick="Inserir('2')" /></td>
+          <td><input type="button" value="3" onclick="Inserir('3')" /></td>
+          <td rowspan="2"><input type="button" value="=" style="height: 110px;" onclick="getValue()"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><input type="button" value="0" style="width: 108px;" onclick="Inserir('0')"></td>
+          <td><input type="button" value="." onclick="Inserir('.')"></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+  <script src="calculadora.js"></script>
+</body>
+
+</html>
